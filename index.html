@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Заказ книги</h1>
+
+    <div id="search-results">
+        <div class="form-group">
+            <label for="book-title">Название книги:</label>
+            <input type="text" id="book-title" name="book-title" class="form-control">
+            <button type="button" id="search-button" class="btn btn-primary">Найти</button>
+        </div>
+        <div id="book-results"></div>
+    </div>
+
+    <div class="container">
+        <h1>Отметка присутствующих</h1>
+        <label for="groupSelect">Группа:</label>
+        <select id="groupSelect">
+            <option value="group1">Группа 1</option>
+            <option value="group2">Группа 2</option>
+            <option value="group3">Группа 3</option>
+        </select>
+        <label for="lessonSelect">Лекция:</label>
+        <select id="lessonSelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <div id="topicInput">
+            <label for="lessonTopic">Тема лекции:</label>
+            <input type="text" id="lessonTopic">
+        </div>
+        <button id="selectButton">Выбрать</button>
+        <div id="studentList" style="display: none;"></div>
+        <button id="saveButton" style="display: none;">Сохранить</button>
+    </div>
+
+    <div class="content">
+        <h1>Бронирование билетов на поезд</h1>
+        <div class="form-group">
+            <label for="direction">Направление:</label>
+            <select id="direction">
+                <option value="odessa-lviv">Одесса - Львов</option>
+                <option value="kyiv-lviv">Киев - Львов</option>
+                <option value="kharkiv-odessa">Харьков - Одесса</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Дата поездки:</label>
+            <input type="date" id="date" value="2018-07-24">
+        </div>
+        <div class="seats"></div>
+        <button id="book">Забронировать</button>
+        <div id="booked-tickets">
+            <h2>Забронированные билеты:</h2>
+            <ul id="tickets-list"></ul>
+        </div>
+    </div>
+    
+
+  
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
